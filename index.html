@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+<!-- 
+WELCOME USER! You've reached the source code for a manual created by STS. If you plan on updating or editing this manual, then you're in the right place!
+
+Before editing any STS manuals, please read through the editing guide at https://sts.doit.wisc.edu/manual-editing-guide and follow all recommendations. It is important that we follow the conventions set in the guide in order to maintain quality and consistency across all of our training materials.
+
+Good luck, and have fun!
+-->
+
+        <title>Audacity</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Software manual provided by Software Training for Students at the University of Wisconsin.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' id='uwmadison-fonts-css'  href='https://brand.wisc.edu/content/themes/uw-theme/dist/fonts/uw160/fonts.css?ver=1.1.1' type='text/css' media='all' /><link rel="stylesheet" type="text/css" href="../master-files/css/stylesheet.css">
+        <script src="../master-files/highlight.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../master-files/smooth-scroll.js"></script>
+        <script src="../master-files/primary-functions.js"></script>
+        <script src="../master-files/ga.js"></script>
+    </head>
+
+    <body>
+
+        <div class="manual-front-page">
+            <div id="coverpage-title">
+                <h1>Audacity</h1>
+                <h2>Introduction to Recording and Editing Audio</h2>
+            </div>
+            <div id="about-page"></div>
+            <div id="outline"></div>
+        </div>
+
+
+        <!-- BEGIN MAIN CONTENT -->
+        <section class="topic">
+            <h1>Introduction</h1>
+            <h2>About This Class</h2>
+            <p>Audacity is an open source, free and easy to use audio editor and recorder. It includes powerful audio post-production tools to help create professional podcasts and music.</p>
+            <p>This class introduces the basic concepts and interface of Audacity. By the end of the class, you will gather basic knowledge of how to import, record, edit and export your audio project with Audacity. Some more advanced editing tools will also be mentioned such as <em>auto duck</em> and <em>noise reduction</em>. You will also have the opportunity to record or use our excercise file to create your own podcast. We encourage you explore Audacity's other advanced features that are briefly mentioned at the end of this class. </p>
+
+            <h2>Download Audacity</h2>
+            <img class="center" src="images/logo.jpg" alt="audacity logo with name">
+            <p>Go to <a href="www.audacityteam.org">www.audacityteam.org</a> and download the newest version of Audacity. The version we use for this class is Audacity 2.2.2. Then install Audacity by following the basic procedure of your computer operating system. </p>
+
+            <h2>Download the Class Files</h2>
+            <p>From the STS Canvas Course Homepage, download the Class Files for Audacity. These will help you complete the exercise below!</p>
+
+        </section>
+
+        <section class="topic">
+            <h1>Navigating the Workspace</h1>
+            <p>When you open Audacity, it will automatically create a new project for you. If you want to create an additional new project, go to <strong>File > New</strong></p>
+            <div class="centered-image-large"> <img src="images/audacity-interface.png" alt="image of audacity interface"> </div>
+
+            <h2>Import Audio</h2>
+            <p>Let's go ahead and import some audio! There are two ways to do this:</p>
+            <ul>
+                <li>
+                    Navigate to <span class="highlight-type">File > Open...</span> to import your audio file. If you want to import multiple audio files, this will create an new individual project for each audio file.
+                </li>
+                <li>
+                    Navigate to <span class="highlight-type">File > Import > Audio...</span> to import your audio file. If you want to import multiple audio files, this will import all of them into your current existing project.
+                </li>
+            </ul>
+            <p>For this exercise, let's use <span class="highlight-type">File > Import > Audio...</span> to import the <strong>voiceover file</strong> and <strong>melodyloops-season-of-joy file</strong> from our downloaded Class Files into the same project.</p>
+
+            <p> Audacity will prompt you how do you want to import your audio, we recommand you choose <strong>Make a copy of the files before editing (safer)</strong>. Audacity will keep the original files untouched so that you have a backup if anything goes wrong. Click OK once you have made your selection.</p>
+
+            <img class="center" src="images/importAudio-01.png" alt="image of pop-up box asking to choose an import method">
+
+            <div class="tool-reference">
+                <h3>Selection Tool</h3>
+                <img src="images/icon-selection.png" alt="selection tool icon">
+                <p>The default tool of Audacity. Use it to select, or highlight, any part of the audio to edit it.</p>
+                <div class="center-text">
+                    <img class="center-text" src="images/importing-select.png" alt="image of selecting part of an audio">
+                </div>
+                <p>The light grey area shows that this audio has been selected with the Selection Tool. You can hit <strong>spacebar</strong> or click the <strong>Play Button</strong> to play the highlighted section.</p>
+            </div>
+
+            <div class="tool-reference">
+                <h3>Magnification Tool</h3>
+                <img src="images/icon-magnification.png" alt="magnification tool icon">
+                <p>Use to zoom in and out on wave forms. To zoom in, click on the waveform. To zoom out, hold the Shift Key and click on the audio.</p>
+                <div class="center-text">
+                    <img src="images/magnification-tool-in-use.gif" alt="gif of magnification tool in use">
+                </div>
+            </div>
+
+            <div class="tool-reference">
+                <h3>View Fit Tool</h3>
+                <img src="images/importing-fit.png" alt="view fit tool icon">
+                <p>Press the View Fit Tool icon and Audacity will automatically rescale your entire audio file(s) to fit your project window.</p>
+            </div>
+
+            <h2>Recording Audio</h2>
+            <p>The other way to gather audio is to record it yourself directly in Audacity! To do this, make sure you have access to a <strong>microphone</strong> or a <strong>computer with an internal microphone </strong>(such as Mac laptops). Let's start recording by following these easy steps:</p>
+            <h3>First, test your microphone level</h3>
+            <ol class="instruction-list">
+                <li>
+                    <p> Find the <strong>microphone level bar</strong> at the top right of the interface, and <strong>click to start monitoring</strong>. </p>
+                    <div class="center-text">
+                        <img class="large" src="images/microphone-level-bar.gif" alt="gif showing microphone level bar in use">
+                    </div>
+                </li>
+                <li><strong>Speak in your normal speaking voice</strong> to test the level, make sure your sound level locates at about <strong>-6 dB</strong>. This level helps prevent audio to go over 0 dB which often results in audio distortion, something that cannot be fixed in post production
+                </li>
+
+                <li>
+                    <p> If your mic level is too low or too high, or cannot see the shifting green bar, you can change your voice volume, or adjust the microphone sensibilit on the top left.</p>
+                    <img class="center" src="images/microphone-sensibility.gif" alt="gif showing how to change microphone sensibility">
+                </li>
+            </ol>
+
+            <h3>Start Recording</h3>
+            <p>Choose the type of the microphone you want to use for recording. In this case, I am using the Internal Microphone directly from my laptop.</p>
+            <img src="images/record-mtype.png" alt="microphone selection">
+            <div class="tool-reference">
+                <h3>Record Tool</h3>
+                <img src="images/icon-record.png" alt="record tool icon">
+                <p>Click on the Record Tool to start recording in a new track. Press the Pause Tool to take a break while recording, or Stop Tool once you finish recording.</p>
+            </div>
+        </section>
+
+        <section class="topic">
+            <h1>Basic Audio Editing</h1>
+            <h2>Deleting Audio</h2>
+            <p>To delete a part of the audio file, <strong>select</strong> the part of the audio you want to delete using the <strong>Selection Tool</strong>. <span class="highlight-type">Press <strong>backspace</strong> or <strong>delete</strong> to erase the selected audio.</span> </p>
+
+            <h2>The Edit Menu</h2>
+            <p>The Edit Menu includes basic tools to edit your audio.</p>
+            <ol class="instruction-list">
+                <li>Use the Selection Tool to highlight the audio you want to modify</li>
+                <li>Choose an option from the Edit menu. Some common Edit Menu Options include <strong>Cut, Delete, Copy, and Paste</strong>.</li>
+            </ol>
+            <img class="center" src="images/editing-ccmenu.png" alt="edit menu options that include cut, delete, copy, paste, dubplicate, remove special, clip boundaries, labels, labeled audio, metadeta, and preferences">
+
+            <h3>Duplicate</h3>
+            <p>This option allows a selected audio to be copied onto a new track within a project.</p>
+            <img class="center" src="images/editing-duplicate.PNG" alt="example of duplicated selected audio">
+
+            <h3>Remove Special</h3>
+            <img src="images/Editing-removespecial.png" alt="options under remove special: split cut, split delete, silence audio, trim audio">
+            <ul>
+                <li><span class="highlight-type">Remove Special > <strong>Silence Audio:</strong></span> replaces the selected audio with complete silence</li>
+                <li><span class="highlight-type">Remove Special > <strong>Trim Audio:</strong></span> deletes all audio except the selection</li>
+            </ul>
+
+
+            <h3>Clip Boundaries</h3>
+            <img src="images/editing-clip-boundaries.PNG" alt="clip boundaries options: split, split new, join">
+            <ul>
+                <li><span class="highlight-type">Edit > Clip Boundaries ><strong> Split</strong>:</span> Seperates (splits) the selected audio clip from the rest of the audio on that track</li>
+                <li><span class="highlight-type">Edit > Clip Boundaries > <strong>Split New</strong>:</span> Moves the selected audio clip from its original track onto a new track</li>
+            </ul>
+
+            <div class="tool-reference">
+                <h3>Move Tool</h3>
+                <img src="images/icon-move.png" alt="move tool icon">
+                <p>Use the Move Tool to move the audio you just split to the location you want it to be.</p>
+            </div>
+            <ul>
+                <li><span class="highlight-type">Edit > Clip Boundaries > <strong>Join</strong>:</span> Groups seperate audio clips on the same track into one continuous clip. Use the Selection Tool to highlight multiple clips and then click Join. Notice that Audacity will connect the two clips by adding a duration of complete silence. You can drag the audio clips to join each other to avoid any complete silence. </li>
+                <img src="images/editing-clipboundaries-join.gif" alt="gif showing how to select audio and join them into one clip">
+            </ul>
+
+            <h2>Fade In and Fade Out</h2>
+            <div class="tool-reference">
+                <h3>Fade Tool</h3>
+                <img src="images/icon-fade.png" alt="fade tool icon">
+                <p>Use the Fade Tool to adjust the sound level of your audio. Click on the audio to reveal four dots on the waveform. These points allow you to adjust the sound level as shown by the wavelength.</p>
+                <img src="images/fade-in.gif" alt="example of how to use the fade in tool to adjust volume">
+            </div>
+        </section>
+
+        <section class="topic">
+            <h1>Audio Effects</h1>
+            <p>Audacity includes many audio effects for more advanced audio editing. To apply an effect, first use the <strong>Selection Tool</strong> to highlight the area of the audio you want to modify. Then, from the <strong>Effect Menu</strong>, select an effect option to add to the selected audio.</p>
+            <h2>Basic Audio Effects</h2>
+            <ul>
+                <li><span class="highlight-type">Effect > <strong>Amplify...</strong></span>: Increases or decreases the volume of the selected audio </li>
+                <li><span class="highlight-type">Effect > <strong>Change Speed...</strong></span>: Increases or decreases the speed of the selected audio , affecting the pitch in the process </li>
+                <li><span class="highlight-type">Effect > <strong>Change Pitch...</strong></span>: Changes the degree of highness or lowness of the tone in the selected audio</li>
+                <li><span class="highlight-type">Effect > <strong>Change Tempo...</strong></span>: Changes the speed at which the selected audio is played without affecting the pitch</li>
+                <li><span class="highlight-type">Effect > <strong>Fade In/Fade Out...</strong></span>: In addition to the Fade Tool, you can also use this effect to automatically fade the audio</li>
+            </ul>
+
+            <h2>Advanced Audio Effects</h2>
+            <p>There are many powerful audio effects in Audacity. This section will mainly focus on how to use the <strong>Noise Reduction</strong> Effect and <strong>Auto Duck</strong> Effect.</p>
+            <h3>Noise Reduction</h3>
+            <ol class="instruction-list">
+                <li>
+                    <p>Record your own audio, or import the <strong>noise-reduction.wav</strong> file from the downloaded Class Files into your project</p>
+                </li>
+                <li>
+                    <p>Use the <strong>Selection Tool</strong> to highlight some "empty" space between words within the recorded speech. This selection will be the reference point for Audacity to know what noise to filter out once we apply the effect.</p>
+                    <img class="center" src="images/effects-choosenoise.png" alt="example of selecting empty space between words within the audio">
+                </li>
+                <li>
+                    <p>Go to <span class="highlight-type">Effect > <strong>Noise Reduction...</strong></span> and click <em>Get Noise Profile</em></p>
+                    <img src="images/effect-noise-profile.PNG " alt="noise reduction dialogue box with get noise profile button ">
+                </li>
+                <li>
+                    Using the <strong>Selection Tool</strong>, highlight all of the audio you want to reduce background noise from, and go to <span class="highlight-type">Effect > <strong>Noise Reduction</strong></span> again
+                </li>
+                <li>
+                    <p>
+                        Increase the <strong>Noise reduction (dB)</strong> to filter out more background noise. Keep in mind that if you choose to filter out too much noise, the audio might become distorted. Always make sure to <strong>Preview</strong> your effect before hitting <strong>OK</strong>
+                    </p>
+                    <img src="images/effect-noise-reduction.PNG" alt="noise reduction dialogue box with editing options">
+                </li>
+            </ol>
+            <h4>Before Noise Reduction:</h4>
+            <img src="images/effects-before.png " alt="example of audio wavelengths before noise reduction ">
+            <h4>After Noise Reduction:</h4>
+            <img src="images/effects-after.png " alt="example of audio wavelengths after noise reduction ">
+
+            <h3>Auto Duck</h3>
+            <p>Auto Duck is an especially useful effect for podcasting. The effect reduces (ducks) the volume of one or more selected tracks automatically whenever the volume of a single unselected "control track " placed underneath reaches a particular threshold level. For example, you can have the volume of the track with background music reduce once the track with a voiceover is introduced at a certain volume.</p>
+            <ol class="instruction-list ">
+                <li>
+                    <p>Import the music file <span class="highlight-type"><strong>melodyloops-season-of-joy.mp3</strong></span> and <span class="highlight-type"><strong>voiceover.wav</strong></span> file. Make sure the music file is on the track above the track of the voiceover file. If not, click on the <strong>small triangle next to the audio name</strong>, and choose <em>Move Track Down</em></p>
+                    <img src="images/move-track-down.gif" alt="gif showing how to move a track below another one">
+                </li>
+                <li>
+                    Using the <strong>Selection Tool</strong>, highlight the entire music file and go to <span class="highlight-type">Effect > <strong>Auto Duck</strong></span>
+                </li>
+                <li>
+                    <p>Adjust the <strong>Duck amount</strong> and <strong>outer and inner fade up/fade down length</strong>. The lower the dB of the <strong>Duck amount</strong>, the lower the volume of the music will be once the voiceover appears. The <strong>Outer fade down/up length</strong> is the amount of time it takes to gradually fade the music out or in before the voice audio enters. The inner fade down/up length is the amount of time given to continue the fade after the voice audio enters. Remeber to always <strong>Preview</strong> your edits before clicking OK.</p>
+                    <img src="images/effect-autoduck.png" alt="auto duck dialogue box with editing options">
+                </li>
+                <li>
+                    Press <strong>OK</strong> once you're done. Below is an example of a music file before and after the Auto Duck Effect:
+                </li>
+            </ol>
+            <p><strong>BEFORE AUTO DUCK:</strong></p>
+            <img src=images/effect-adbefore.png alt="image of audio wavelength before auto duck effect added">
+            <p><strong>AFTER AUTO DUCK:</strong></p>
+            <img src=images/effect-adafter.png alt="image of audio wavelength after auto duck effect added">
+        </section>
+
+        <section class="topic">
+            <h1>Saving and Exporting</h1>
+            <p>When you finish working with your audio files, you have several options for saving and exporting your files. </p>
+
+            <h2>Save as Audacity Project</h2>
+            <div class="side-image-large "> <img src="images/saving-audacityproject.png " alt="image of file > save project as..."> </div>
+            <p>Saving as an Audacity project allows you to open the project later and add further changes to your audio. The information of your multiple tracks will be saved into the project. This is the best option if you want to <strong>continue editing in Audacity</strong>. Note that this project is only compatible with Audacity, meaning you won't be able to share your creation with people who don't have Audacity downloaded onto the computer they want to open your project from.</p>
+
+            <ol class="instruction-list">
+                <li>
+                    Go to <span class="highlight-type">File > <strong>Save Project...</strong></span>
+                </li>
+                <li>
+                    <strong>Choose a folder</strong> to save your project in. The default folder is named Audacity and is usually placed under Documents.
+                </li>
+                <li>
+                    Give your project an appropriate <strong>File Name</strong> so that it is easier to locate later in case you forget the folder it's saved in.
+                </li>
+                <li>
+                    Click <strong>Save</strong> to save your project as a <span class="highlight-type">.aup</span> file</li>
+            </ol>
+
+            <h2>Export as WAV File</h2>
+            <img class="side-image-large " src="images/exporting-wav.PNG" alt="image of file > export > export as wav">
+            <p>If you want to export your file to a compatible format, and you want to keep the <strong>best quality</strong> of your audio, export your audio as <span class="highlight-type"> .wav </span> (Waveform Audio File Format) file format. This file format is commonly used for uncompressed audio files and is <strong>compatible with most media players</strong>. It is also a <strong>larger file size </strong>compared to other formats.</p>
+
+            <ol class="instruction-list">
+                <li>
+                    Go to <span class="highlight-type">File > Export > <strong>Export as WAV</strong></span>
+                </li>
+                <li>
+                    <strong>Choose a folder</strong> to save your project in. The default folder is named Audacity and is usually placed under Documents.
+                </li>
+                <li>
+                    Give your project an appropriate <strong>File Name</strong> so that it is easier to locate later in case you forget the folder it's saved in.
+                </li>
+                <li>Choose <strong>Save as type</strong> as either <span class="highlight">WAV (Microsoft) signed 16-bit PCM</span> or <span class="highlight">WAV (Microsoft) signed 32-bit Float PCM</span> and click <strong>Save</strong>.</li>
+                <li> Audacity will prompt you to enter <strong>metadata</strong> for the audio. Complete the form to the best of your ability and click <strong>OK</strong>.</li>
+            </ol>
+            <div class="centered-image-large "> <img src="images/exporting-Metadata.png " alt="wav file exporting metadeta form"> </div>
+
+            <h2>Export as MP3 File</h2>
+            <p>If you want your audio files to have <strong>relatively good quality</strong> and <strong>smaller file size</strong>, export your audio as a <span class="highlight-type"> .mp3 </span> file. In order to export <span class="highlight-type"> .mp3 </span> files with Audacity, you will need to download a free MP3 encouder called <strong>lame.lib</strong>. </p>
+            <h3>Download Lame For Windows</h3>
+            <ol class="instruction-list">
+                <li>Go to <a target="_blank" href="http://lame.buanzo.org/#lamewindl">lame.buanzo.org/#lamewindl</a></li>
+                <li>Click the link <span class="highlight">Lame v3.99.3 for Windows.exe</span> to download the file.</li>
+                <li>Click the downloaded file to open it and follow the simple instructions to install Lame.</li>
+            </ol>
+            <h3>Download Lame For Mac</h3>
+            <ol class="instruction-list">
+                <li>Go to <a target="_blank" href="http://lame.buanzo.org/#lameosxdl">lame.buanzo.org/#lameosxdl</a></li>
+                <li>Click on the link <span class="highlight">Lame_Library_v3.99.5_for_Audacity_on_macOS.dmg</span> to download the file.</li>
+                <li>Click the downloaded file to open it and follow the simple instructions to install Lame.</li>
+            </ol>
+
+            <h3>Instructions to Export as MP3 File</h3>
+            <ol class="instruction-list">
+                <li>
+                    Go to <span class="highlight-type">File > Export > <strong>Export as MP3</strong></span>
+                </li>
+                <li>
+                    <strong>Choose a folder</strong> to save your project in. The default folder is named Audacity and is usually placed under Documents.
+                </li>
+                <li>
+                    Give your project an appropriate <strong>File Name</strong> so that it is easier to locate later in case you forget the folder it's saved in.
+                </li>
+                <li>For the <strong>Format Options</strong>, usually the default will do the job</li>
+                <li> Audacity will prompt you to enter <strong>metadata</strong> for the audio. Complete the form to the best of your ability and click <strong>OK</strong>.</li>
+            </ol>
+            <div class="centered-image-large "> <img src="images/exporting-Metadata.png " alt="wav file exporting metadeta form"> </div>
+
+        </section>
+        <!-- END MAIN CONTENT -->
+    </body>
+
+</html>
