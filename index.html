@@ -112,7 +112,7 @@ Good luck, and have fun!
 
         <h2>Opening a New Project</h2>
         <p>When you open Audacity, it will automatically create a new project for you. If you want to create an additional new project, go to <strong>File > New</strong></p>
-        <div class="centered-image-large"> <img src="images/audacity-interface.png" alt="image of audacity interface"> </div>
+        <div class="centered-image-medium"> <img src="images/audacity-interface.png" alt="image of audacity interface"> </div>
 
         <h2>Import Audio</h2>
         <p>Go to <span class="highlight-type">File > Import > Audio...</span> to bring in your audio file(s) to work with. To import multiple audio files at once, hold down <kbd>Command</kbd> or <kbd>Control</kbd> and click on each file you'd like to use in your Audacity project.</p>
@@ -154,9 +154,9 @@ Good luck, and have fun!
         <h2>Zoom In/Out</h2>
         <p>When working on an Audacity project, it may be helpful to zoom in and out of a clip to make more detailed edits!</p>
         <div class="tool-reference">
-            <h3>Magnification Tool</h3>
+            <h3>Magnification Tools</h3>
             <img src="images/icon-magnification.png" alt="magnification tool icon">
-            <p>Use to zoom in and out on wave forms. To zoom in, click on the waveform. To zoom out, hold the Shift Key and click on the audio.</p>
+            <p>Use to zoom in and out on wave forms. To zoom in, click on the waveform. Repeat procedure to zoom out. </p>
             <div class="center-text">
                 <img src="images/magnification-tool-in-use.gif" alt="gif of magnification tool in use">
             </div>
@@ -205,7 +205,7 @@ Good luck, and have fun!
         <p>We mentioned already that you can use the Selection Tool to play specific parts of a clip. You can also use the same selection method to make cuts and split your clip. Splitting clips is helpful as it allows you to create new sections of audio that you can move around or make copies of as needed.</p>
         <ol class="instruction-list">
             <li>Use the Selection Tool to highlight the section you want to split</li>
-            <li>Go to <strong>Edit > Clip Boundaries > Split</strong></li>
+            <li>Go to <strong>Edit > Audio Clips > Split</strong></li>
         </ol>
 
         <img class="center full-width" src="images/split.gif" alt="gif showing how to split an audio clip">
@@ -213,7 +213,7 @@ Good luck, and have fun!
 
         <h3>Joining Clips</h3>
         <p>
-            <span class="highlight-type">Edit > Clip Boundaries > <strong>Join</strong>:</span> Groups seperate audio clips on the same track into one continuous clip. Use the Selection Tool to highlight multiple clips and then click Join. Notice that Audacity will connect the two clips by adding a duration of complete silence. You can drag the audio clips to join each other to avoid any complete silence.
+            <span class="highlight-type">Edit > Audio Clips > <strong>Join</strong>:</span> Groups seperate audio clips on the same track into one continuous clip. Use the Selection Tool to highlight multiple clips and then click Join. Notice that Audacity will connect the two clips by adding a duration of complete silence. You can drag the audio clips to join each other to avoid any complete silence.
             <img src="images/editing-clipboundaries-join.gif" alt="gif showing how to select audio and join them into one clip">
         </p>
 
@@ -282,7 +282,7 @@ Good luck, and have fun!
         <ol class="instruction-list">
             <li>Highlight the clip or select the area you want to apply the Amplify effect to </li>
             <li>
-                Go to <strong>Effect > Amplify</strong>
+                Go to <strong>Effect > Volume and Compression > Amplify</strong>
             </li>
             <li>Select an amount (in decibals) to decrease or increase the volume of the clip.</li>
             <li>Use the "Preview" button to hear the volume levels. Note that both the Preview and OK buttons will be greyed out if the levels are too high unless you check the "Allow clipping" box. We do not recommend this, however, as parts of your audio will become distorted after it's reached its clipping limits.</li>
@@ -297,7 +297,7 @@ Good luck, and have fun!
         </div>
         <ol class="instruction-list">
             <li><strong>Select the entire tracks</strong> that have the audio clips that need to be "normalized" by using the "Select" button on the bottom-left corner of each track. Remember to use <kbd>Command</kbd> or <kbd>Control</kbd> to select more than one track</li>
-            <li>Go to <strong>Effect > "Loudness Normalization..." </strong></li>
+            <li>Go to <strong>Effect > Volume and Compression > "Loudness Normalization..." </strong></li>
             <li>From the pop-up menu, use the default settings (recommended) or adjust the LUFS to a number of your liking.</li>
             <li>Click OK</li>
             <li>Notice how your volumes between clips are now the same!</li>
@@ -321,11 +321,11 @@ Good luck, and have fun!
                 <img class="center" src="images/effects-choosenoise.png" alt="example of selecting empty space between words within the audio">
             </li>
             <li>
-                <p>Go to <span class="highlight-type">Effect > <strong>Noise Reduction...</strong></span> and click <em>Get Noise Profile</em></p>
+                <p>Go to <span class="highlight-type">Effect > Noise Removal and Repair > <strong>Noise Reduction...</strong></span> and click <em>Get Noise Profile</em></p>
                 <img src="images/effect-noise-profile.PNG " alt="noise reduction dialogue box with get noise profile button ">
             </li>
             <li>
-                Using the <strong>Selection Tool</strong>, highlight all of the audio you want to reduce background noise from, and go to <span class="highlight-type">Effect > <strong>Noise Reduction</strong></span> again
+                Using the <strong>Selection Tool</strong>, highlight all of the audio you want to reduce background noise from, and go to <span class="highlight-type">Effect > Noise Removal and Repair <strong>Noise Reduction</strong></span> again
             </li>
             <li>
                 <p>
@@ -361,7 +361,10 @@ Good luck, and have fun!
         <h2>First, test your microphone level</h2>
         <ol class="instruction-list">
             <li>
-                <p> Find the <strong>microphone level bar</strong> at the top right of the interface, and <strong>click to start monitoring</strong>. </p>
+                <p> Find the <strong>microphone icon </strong> at the top right of the interface, and click <strong>Start Monitoring</strong>. </p>
+                <div class="center-text">
+                    <img class="large" src="images/start-monitoring.png">
+                </div>
                 <div class="center-text">
                     <img class="large" src="images/microphone-level-bar.gif" alt="gif showing microphone level bar in use">
                 </div>
@@ -376,7 +379,7 @@ Good luck, and have fun!
         </ol>
 
         <h2>Start Recording</h2>
-        <p>Choose the type of the microphone you want to use for recording. In this case, I am using the Internal Microphone directly from my laptop.</p>
+        <p>Choose the type of the microphone you want to use for recording. In this case, I am using the internal microphone directly from my laptop.</p>
         <img src="images/record-mtype.png" alt="microphone selection">
         <div class="tool-reference">
             <h3>Record Tool</h3>
@@ -464,7 +467,7 @@ Good luck, and have fun!
                 <img src="images/move-track-down.gif" alt="gif showing how to move a track below another one">
             </li>
             <li>
-                Using the <strong>Selection Tool</strong>, highlight the entire music file and go to <span class="highlight-type">Effect > <strong>Auto Duck</strong></span>
+                Using the <strong>Selection Tool</strong>, highlight the entire music file and go to <span class="highlight-type">Effect > Volume and Compression > <strong>Auto Duck</strong></span>
             </li>
             <li>
                 <p>Adjust the <strong>Duck amount</strong> and <strong>outer and inner fade up/fade down length</strong>. The lower the dB of the <strong>Duck amount</strong>, the lower the volume of the music will be once the voiceover appears. The <strong>Outer fade down/up length</strong> is the amount of time it takes to gradually fade the music out or in before the voice audio enters. The inner fade down/up length is the amount of time given to continue the fade after the voice audio enters. Remeber to always <strong>Preview</strong> your edits before clicking OK.</p>
@@ -483,10 +486,10 @@ Good luck, and have fun!
         <h2>More Audio Effects</h2>
         <p>Audacity includes many audio effects for more advanced audio editing. To apply an effect, first use the <strong>Selection Tool</strong> to highlight the area of the audio you want to modify. Then, from the <strong>Effect</strong> menu, select an effect option to add to the selected audio.</p>
         <ul>
-            <li><span class="highlight-type">Effect > <strong>Change Speed...</strong></span>: Increases or decreases the speed of the selected audio , affecting the pitch in the process </li>
-            <li><span class="highlight-type">Effect > <strong>Change Pitch...</strong></span>: Changes the degree of highness or lowness of the tone in the selected audio</li>
-            <li><span class="highlight-type">Effect > <strong>Change Tempo...</strong></span>: Changes the speed at which the selected audio is played without affecting the pitch</li>
-            <li><span class="highlight-type">Effect > <strong>Fade In/Fade Out...</strong></span>: In addition to the Fade Tool, you can also use this effect to automatically fade the audio</li>
+            <li><span class="highlight-type">Effect > Pitch and Tempo > <strong>Change Speed...</strong></span>: Increases or decreases the speed of the selected audio , affecting the pitch in the process </li>
+            <li><span class="highlight-type">Effect > Pitch and Tempo > <strong>Change Pitch...</strong></span>: Changes the degree of highness or lowness of the tone in the selected audio</li>
+            <li><span class="highlight-type">Effect > Pitch and Tempo >  <strong>Change Tempo...</strong></span>: Changes the speed at which the selected audio is played without affecting the pitch</li>
+            <li><span class="highlight-type">Effect > Fading > <strong>Fade In/Fade Out...</strong></span>: In addition to the Fade Tool, you can also use this effect to automatically fade the audio</li>
         </ul>
 
 
